@@ -7,6 +7,7 @@ This is a shop project.
 In this project, we can:
 
 - Login and logout
+- Payment with online payment portal
 - Register with OTP code via SMS
 - Add products with images
 - Download and delete images from the bucket
@@ -25,6 +26,7 @@ In this project, we can:
 ## Additional Features
 
 - Custom User and Manager models
+- online payment
 - Management command for deleting OTP codes
 - Utilizing utils for sending SMS
 - and many more ...
