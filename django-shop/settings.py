@@ -167,10 +167,10 @@ AUTH_USER_MODEL = 'accounts.User'
 
 # ARVAN CLOUD STORAGE
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID = '9e49cc63-2545-44b6-b32b-5abcec618105'
-AWS_SECRET_ACCESS_KEY = '2a3fb78bf8d49ad5d20509a556bb01446ccaad13554c4a778db5581754509c33'
+AWS_ACCESS_KEY_ID = 'access key'
+AWS_SECRET_ACCESS_KEY = 'access secret key'
 AWS_S3_ENDPOINT_URL = 'https://s3.ir-thr-at1.arvanstorage.ir'
-AWS_STORAGE_BUCKET_NAME = 'django-dent'
+AWS_STORAGE_BUCKET_NAME = 'name bucket'
 AWS_SERVICE_NAME = 's3'
 AWS_S3_FILE_OVERWRITE = False
 AWS_LOCAL_STORAGE = f'{BASE_DIR}/aws/'
