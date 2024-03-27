@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_headers%}
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="category-container">
+    {% for category in categories %}
+        <div class="category">
+            <a href="{{ category.get_absolute_url }}" class="btn btn-danger category-btn">{{ category.name }}</a>
+            <ul class="subcategory-list">
+                {% for sub in category.scategory.all %}
+                    <li><a class="subcategory-item" href="{{ sub.get_absolute_url }}">{{ sub.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="product-container">
+    {% for product in products %}
+        <div class="product-card">
+            <a href="{{ product.get_absolute_url }}">
+                <img src="{{ product.image.url }}" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">{{ product.name }}</h3>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

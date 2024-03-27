@@ -1,0 +1,136 @@
+.product-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-details h2 {
+    margin-bottom: 5px;
+}
+
+.product-details small {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.btn-add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category-btn {
+    margin-bottom: 10px;
+}
+
+.subcategory-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.subcategory-item {
+    color: white;
+    text-decoration: none;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* CSS for the table */
+.my-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.my-table th,
+.my-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.my-table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.my-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.my-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.my-table a.btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.my-table a.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.my-table a.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_headers%}
+    <link rel="stylesheet" href="{% static 'orders/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">Checkout</h3>
+    <p>Total: {{ order.get_total_price }}</p>
+    <a href="{% url 'orders:order_pay' order.id %}" style="text-decoration: none; background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px;">Pay</a>
+</div>
+
+<div style="margin-top: 20px;">
+    <form action="{% url 'orders:apply_coupon' order.id %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Apply" style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    </form>
+</div>
+
+{% endblock %}

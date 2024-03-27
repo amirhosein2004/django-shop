@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_headers%}
+    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post" class="my-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Send" class="btn-submit">
+    </form>
+{% endblock %}
