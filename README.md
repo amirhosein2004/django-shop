@@ -21,3 +21,10 @@ In this project, we can:
 - Redis for caching
 - PostgreSQL as the database
 - Media files are stored in cloud storage
+
+## Additional Features
+
+- Custom User and Manager models
+- Management command for deleting OTP codes
+- Utilizing utils for sending SMS
+- and many more ...
